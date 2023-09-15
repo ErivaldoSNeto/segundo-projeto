@@ -1,0 +1,85 @@
+/* Seleciona todos os elementos e redefine as margens, o preenchimento e a fonte padrão para todos */
+* {
+    margin: 0;                           /* Remove todas as margens padrões */
+    padding: 0;                          /* Remove todos os paddings padrões */
+    font-family: 'orbitron', sans-serif; /* Define a fonte padrão para todos os elementos */
+}
+
+/* Estilização para o container principal */
+.container {
+    display: flex;                      /* Define o tipo de exibição para flexbox */
+    flex-direction: column;             /* Define a direção do flexbox para a coluna */
+    align-items: center;                /* Centraliza horizontalmente os elementos filhos */
+    gap: 2rem;                          /* Define um espaçamento entre os elementos filhos */
+    padding-top: 3rem;                  /* Adiciona padding no topo */
+    background-color: #f1f1f1;         /* Define a cor de fundo do container */
+    height: 100vh;                      /* Define a altura do container para ocupar a tela inteira */
+}
+
+/* Estilização do título h1 dentro do container */
+.container h1 {
+    color: rgb(2, 240, 85);             /* Define a cor do título */
+}
+
+/* Estilização para a seção do cronômetro */
+.timer {
+    display: flex;                      /* Define o tipo de exibição para flexbox */
+    font-size: 55px;                    /* Define o tamanho da fonte */
+    font-weight: bold;                  /* Define o peso da fonte como negrito */
+    color: #333;                        /* Define a cor do texto */
+}
+
+/* Estilização para cada unidade de tempo (minutos, segundos e milissegundos) */
+.time {
+    display: flex;                      /* Define o tipo de exibição para flexbox */
+    justify-content: center;            /* Centraliza horizontalmente o conteúdo */
+    align-items: center;                /* Centraliza verticalmente o conteúdo */
+    margin-right: 10px;                 /* Adiciona margem à direita */
+    color: rgb(0, 38, 14);              /* Define a cor do texto */
+    min-width: 90px;                    /* Define a largura mínima */
+}
+
+/* Estilização para os separadores (:) */
+.separator {
+    padding: 0 10px;                    /* Adiciona padding horizontal */
+    color: rgb(0, 20, 8);               /* Define a cor do separador */
+}
+
+/* Estilização específica para a seção de milissegundos */
+#milliseconds {
+    font-size: 30px;                    /* Define o tamanho da fonte */
+    color: rgb(52, 79, 63);             /* Define a cor do texto */
+}
+
+/* Estilização para o container dos botões */
+.button {
+    display: flex;                      /* Define o tipo de exibição para flexbox */
+    gap: 1rem;                          /* Define um espaçamento entre os botões */
+}
+
+/* Estilização base para todos os botões */
+.btn {
+    padding: 10px 20px;                 /* Adiciona padding vertical e horizontal */
+    font-size: 18px;                    /* Define o tamanho da fonte */
+    font-weight: bold;                  /* Define o peso da fonte como negrito */
+    border-radius: 30px;                /* Arredonda os cantos do botão */
+    cursor: pointer;                    /* Muda o cursor para indicar clicabilidade */
+    border: 1px solid #ccc;             /* Adiciona borda ao botão */
+    transition: all 0.2s ease-in-out;   /* Adiciona transição para todas as propriedades */
+}
+
+/* Efeito de escala para os botões quando o mouse passa sobre eles */
+.btn:hover {
+    transform: scale(1.1);              /* Aumenta o tamanho do botão em 10% */
+}
+
+/* Estilização específica para o botão de iniciar */
+#startBtn {
+    background-color: rgb(2, 240, 85);  /* Define a cor de fundo */
+    color: #fff;                        /* Define a cor do texto como branco */
+}
+
+/* Os botões de pausar e continuar são inicialmente ocultos */
+#pauseBtn, #resumeBtn {
+    display: none;                      /* Oculta os botões */
+}

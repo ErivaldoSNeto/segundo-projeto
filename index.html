@@ -1,0 +1,56 @@
+<!-- Declaração do tipo de documento, indicando que é um documento HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definindo o charset como UTF-8 para suporte a caracteres universais -->
+    <meta charset="UTF-8">
+    <!-- Meta tag para tornar o site responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Cronômetro</title>
+    <!-- Preconectando com o domínio fonts.googleapis.com para carregar a fonte mais rapidamente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconectando com o domínio fonts.gstatic.com para carregar a fonte mais rapidamente, com atributo crossorigin -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importando uma fonte personalizada do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Vinculando o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vinculando o arquivo JavaScript. O atributo 'defer' garante que o script será executado após o carregamento do HTML -->
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Container principal que engloba todo o conteúdo do cronômetro -->
+    <div class="container">
+        <!-- Título do cronômetro -->
+        <h1>Cronômetro</h1>
+        <!-- Seção do display do cronômetro -->
+        <div class="timer">
+            <!-- Mostra os minutos do cronômetro. O valor inicial é 00. -->
+            <div class="time" id="minutes">00</div>
+            <!-- Separador entre minutos e segundos -->
+            <div class="separator">:</div>
+            <!-- Mostra os segundos do cronômetro. O valor inicial é 00. -->
+            <div class="time" id="seconds">00</div>
+            <!-- Separador entre segundos e milissegundos -->
+            <div class="separator">:</div>
+            <!-- Mostra os milissegundos do cronômetro. O valor inicial é 000. -->
+            <div class="time" id="milliseconds">000</div>
+        </div>
+        <!-- Seção dos botões de controle do cronômetro -->
+        <div class="button">
+            <!-- Botão para iniciar o cronômetro -->
+            <button class="btn" id="startBtn">Iniciar</button>
+            <!-- Botão para pausar o cronômetro -->
+            <button class="btn" id="pauseBtn">Pausar</button>
+            <!-- Botão para continuar o cronômetro após ser pausado -->
+            <button class="btn" id="resumeBtn">Continuar</button>
+            <!-- Botão para reiniciar o cronômetro, zerando os valores -->
+            <button class="btn" id="resetBtn">Resetar</button>
+        </div>
+    </div>
+</body>
+
+</html>
